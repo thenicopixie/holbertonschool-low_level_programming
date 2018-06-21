@@ -4,7 +4,6 @@
 * program to print all single digit numbers of base 10
 * Return: 0
 */
-
 int main(void)
 {
 	puts("123456789");
