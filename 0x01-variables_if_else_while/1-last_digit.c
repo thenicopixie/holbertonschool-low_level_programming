@@ -4,10 +4,9 @@
 /**
 * main - Entry point
 * print last digit in int
-* Answer: 0
+* Return: 0
 */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -24,7 +23,7 @@ int main(void)
 	}
 	else if (lastDig == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, lastDig);
+		printf("Last digit of %d is 0 and is 0\n", n);
 	}
 	else if (lastDig < 6 && n != 0)
 	{
