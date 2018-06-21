@@ -13,10 +13,12 @@ int main(void)
 	while (nums <= 16)
 	{
 		putchar(nums);
+		nums++;
 	}
 	while (letter <= 122)
 	{
 		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 
