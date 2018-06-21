@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	int nums = 0;
+	int nums = 48;
 	int letter = 97;
 
-	while (nums <= 16)
+	while (nums <= 57)
 	{
 		putchar(nums);
 		nums++;
@@ -20,7 +20,7 @@ int main(void)
 		putchar(letter);
 		letter++;
 	}
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 }
