@@ -13,3 +13,7 @@
 8. 8-print_base16.c -> print numbers in lowercase
 9. 9-print_comb.c -> print all possible combinations of single digits
 10. 10-print_comb2.c -> print numbers 00-99
+11. 100-print_comb3.c -> print all combination of two single digits
+12. 101-print_comb4.c -> print combinations of three single digits
+13.
+
