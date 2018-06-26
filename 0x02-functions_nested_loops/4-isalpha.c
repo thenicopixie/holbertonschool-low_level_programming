@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
 * _isalpha - entry point
  * program to check for alpha letters
