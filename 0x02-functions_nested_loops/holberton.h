@@ -14,6 +14,7 @@
  * 9. times_table - print a 9 times table
  * 10. add - add two integers
  * 11. print_to_98 - print all natural numbers from n-98
+ * 12. void print_times_table(int n) - print n times table
  */
 int _putchar(char c);
 void print_alphabet(void);
@@ -27,5 +28,6 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
+void print_times_table(int n);
 
 #endif /* _HOLBERTON_H_ */
