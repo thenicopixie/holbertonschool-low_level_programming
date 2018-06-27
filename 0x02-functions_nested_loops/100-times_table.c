@@ -18,11 +18,8 @@ void print_times_table(int n)
 				ones = mult_num % 10;
 				tens = (mult_num / 10) % 10;
 				hundreds = mult_num / 100;
-				if (col >= 0 || col < n - 1)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
 				if (mult_num <= 9)
 				{
 					_putchar(' ');
