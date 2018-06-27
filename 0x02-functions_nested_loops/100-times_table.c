@@ -7,7 +7,7 @@ void print_times_table(int n)
 {
 	int row, col, mult_num, ones, tens, hundreds;
 
-	if ( n >= 0 && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		for (row = 0; row <= n; row++)
 		{
