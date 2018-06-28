@@ -8,7 +8,7 @@
 * 2. int mul(int a, int b) - multiply two integers
 * 3. void print_numbers(void) - print numbers 0-9
 * 4. void print_most_numbers(void) - print numbers 0-1, 3, 5-9
-* 5.
+* 5. void more_numbers(void) - print 0-14 ten times
 */
 int _putchar(char c);
 int _isupper(int c);
@@ -16,5 +16,6 @@ int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
 void print_most_numbers(void);
+void more_numbers(void);
 
 #endif /* _HOLBERTON_H_ */
