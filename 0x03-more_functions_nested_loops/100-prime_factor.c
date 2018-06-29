@@ -1,34 +1,27 @@
 #include <stdio.h>
 /**
-*
-*
+* main - entry point
+* Return: (0)
 */
 int main(void)
 {
-	long num, i, j, prime;
+	unsigned long num, greatest;
 
 	num = 612852475143;
 
-	for (i = num; i > 1; i--)
+	for (greatest = 2; greatest < num; )
 	{
-		if (num % i == 0)
-		{	
-			prime = 0;
-			for (j = 2; j < i; j++)
-			{
-				if (i % j == 0)
-				{
-					prime = 1;
-					break;
-				}
-			}
-			if (prime == 0)
-			{
-				printf("%li\n", i);
-				break;
-			}
+		if (num % greatest == 0)
+		{
+			num = num / greatest;
+			greatest = 2;
 		}
-		
+		else
+		{
+			greatest++;
+		}
 	}
+	printf("%lu", greatest);
+	printf("\n");
 	return (0);
 }
