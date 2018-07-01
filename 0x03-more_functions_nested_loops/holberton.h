@@ -12,8 +12,10 @@
  *  6. void print_line(int n) - draw straight line
  *  7. void print_diagonal(int n) - draw diagonal line
  *  8. void print_square(int size) - print square
- *  9.
+ *  9. int main(void) - print 1-100 replace multiples of 3 and 5 with Fizz Buzz
  * 10. void print_triangle(int size) - print triangle
+ * 11.
+ * 12. void print_number(int n) - print integer
 */
 int _putchar(char c);
 int _isupper(int c);
@@ -26,5 +28,7 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
+int main(void);
+void print_number(int n);
 
 #endif /* _HOLBERTON_H_ */
