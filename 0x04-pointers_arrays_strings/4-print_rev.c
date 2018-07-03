@@ -5,26 +5,19 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i, len;
+	len = 0;
 
-	i = _strlen(s);
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	i = len;
 
-	for (; i >= 0; i--)
+	while (i > 0)
 	{
 		_putchar(s[i - 1]);
+		i--;
 	}
 	_putchar('\n');
-}
-/**
- * _strlen - return length of string
- * @s: string to check
- * Return: length
- */
-int _strlen(char *s)
-{
-	int length;
-
-	for (length = 0; s[length] != '\0'; length++)
-	;
-	return (length);
 }
