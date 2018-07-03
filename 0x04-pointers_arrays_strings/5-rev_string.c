@@ -7,7 +7,7 @@ void rev_string(char *s)
 {
 	int i, j, temp, mid;
 
-	i = _strlen(s)-1;
+	i = _strlen(s) - 1;
 	j = 0;
 	mid = i / 2;
 
@@ -16,7 +16,7 @@ void rev_string(char *s)
 		temp = s[i];
 		s[i] = s[j];
 		s[j] = temp;
-		j++;	
+		j++;
 	}
 }
 /**
