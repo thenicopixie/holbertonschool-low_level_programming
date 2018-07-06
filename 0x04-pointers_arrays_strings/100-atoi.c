@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _atoi - convert string to integer 
+ * _atoi - convert string to integer
  * @s: string to convert
  * Return: (0)
  */
@@ -27,8 +27,6 @@ int _atoi(char *s)
 		{
 			break;
 		}
-
-		
 	}
 	if (sign % 2 != 0)
 	{
@@ -38,6 +36,6 @@ int _atoi(char *s)
 	{
 		sign = 1;
 	}
-	return (result*sign);
+	return (result * sign);
 	_putchar('\n');
 }
