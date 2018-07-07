@@ -11,6 +11,7 @@
  * 6. char *cap_string(char *) - capitalize all words of a string
  * 7. char *leet(char *) - encode string to 1337 
  * 8. char *rot13(char *) - encode string using rot13
+ * 9. void print_number(int n) - print integer
  */
 
 int _putchar(char c);
@@ -21,7 +22,8 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
-char *leet(char *)
+char *leet(char *);
 char *rot13(char *);
+void print_number(int n);
 
 #endif /* _HOLBERTON_H_ */
