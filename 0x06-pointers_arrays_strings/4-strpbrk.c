@@ -19,5 +19,9 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
+	if (accept[j] == '\0')
+	{
+		return (s + i);
+	}
 	return ("NULL");
 }
