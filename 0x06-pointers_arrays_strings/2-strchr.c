@@ -17,13 +17,12 @@ char *_strchr(char *s, char c)
 	{
 		if (*(s + count) == c)
 		{
-			s += count;
-			return (s);
+			return (s + count);
 		}
 	}
 	if (c == '\0')
 	{
-		return (s);
+		return (s + count);
 	}
 	return (NULL);
 }
