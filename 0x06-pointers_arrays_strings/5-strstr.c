@@ -9,7 +9,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, sublen, haylen, match = 0;
+	int i, j, sublen,  match = 0;
 
 	for (sublen = 0; needle[sublen] != '\0'; sublen++)
 	;
