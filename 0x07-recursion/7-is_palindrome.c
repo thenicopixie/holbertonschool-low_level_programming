@@ -9,13 +9,13 @@
  */
 int is_equal(char *s, int len, int beg)
 {
-	if (s[beg] == s[len])
-	{
-		return (1);
-	}
-	else
+	if (s[beg] != s[len])
 	{
 		return (0);
+	}
+	if (beg > len)
+	{
+		return (1);
 	}
 	return (is_equal(s, len - 1, beg + 1));
 }
