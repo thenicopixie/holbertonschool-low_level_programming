@@ -9,47 +9,35 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, sublen = 0, max_len = 0, matchlen;
-
-	char *first_match = NULL;
-
+	int i, j, sublen, haylen, match = 0;
 
 	for (sublen = 0; needle[sublen] != '\0'; sublen++)
 	;
-	max_len = sublen;
+	for (haylen = 0; haystack[haylen] != '\0'; haylen++)
+	;
 
-	if (sublen == 0)
+	for (i = 0; haystack[i] - sublen + 1; i++)
 	{
-		return (haystack);
-	}
-	matchlen = 0;
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		for (j = 0; needle[j] != '\0'; j++)
+		for (j = 0; j < sublen; j++)
 		{
-			if (matchlen < max_len)
+			if (needle[j] == haystack[i + j])
 			{
-				if (needle[j] == haystack[i])
-				{
-					if (first_match == NULL)
-					{
-						first_match = &haystack[i];
-					}
-						i++;
-						matchlen++;
-				}
+				match = 1;
 			}
 			else
 			{
-				first_match = NULL;
-				matchlen = 0;
-				i++;
+				match = 0;
+				break;
 			}
 		}
-		if (matchlen == max_len)
+		if (match == 1)
 		{
-			return (first_match);
+			return (haystack + i);
 		}
+	}
+	if (sublen == 0)
+	{
+		return (haystack);
 	}
 	return (NULL);
 }
