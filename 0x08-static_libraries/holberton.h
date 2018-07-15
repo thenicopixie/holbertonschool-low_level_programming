@@ -2,7 +2,7 @@
 #define _HOLBERTON_H_
 
 /**
- * _putchar 
+ * _putchar
  * _islower
  * _isalpha
  * _abs
@@ -23,8 +23,6 @@
  * _strpbrk
  * _strstr
  */
-
-int print_alphabet();
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
