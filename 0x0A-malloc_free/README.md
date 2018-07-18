@@ -17,6 +17,6 @@ File | Goal
 4-free_grid.c | frees a 2 dimensional grid previously created by alloc_grid function.
 5-argstostr.c | concatenates all the arguments of your program.
 
-#Author
+# Author
 
 **Nicole Swanson**
