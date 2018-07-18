@@ -1,7 +1,7 @@
 # README
 
 ## Description
-#### What I shold learn:
+#### What I should learn:
 - What is the difference between automatic and dynamic allocation
 - What is malloc and free and how to use them
 - Why and when to use malloc
@@ -16,3 +16,7 @@ File | Goal
 3-alloc_grid.c | returns a pointer to a 2 dimensional array of integers.
 4-free_grid.c | frees a 2 dimensional grid previously created by alloc_grid function.
 5-argstostr.c | concatenates all the arguments of your program.
+
+#Author
+
+**Nicole Swanson**
