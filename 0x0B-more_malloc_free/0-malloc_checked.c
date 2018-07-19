@@ -9,11 +9,15 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr = malloc(sizeof(int) * b); /* initialize pointer and allocate memory from b to pointer */
+	 /* initialize pointer and allocate memory from b to pointer */
+	void *ptr = malloc(b);
 
+	if (b == 0)
+	{
+		return (NULL);
+	}
 	if (ptr == NULL) /* if malloc fails, exit with a status of 98 */
 	{
-		free(ptr);
 		exit(98);
 	}
 	return (ptr);
