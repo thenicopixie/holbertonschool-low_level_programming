@@ -49,8 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
-	if (n == 0)
-		return (NULL);
 	if (s1 == NULL) /* check if NULL is passed to s1 */
 		s1 = "";
 	if (s2 == NULL) /* check if NULL is passed to s2 */
@@ -59,28 +57,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ptr = malloc(sizeof(char) * (len1 + n + 1));
 		if (ptr == NULL)
-		{
 			return (NULL);
-		}
 		_strcpy(ptr, s1);
 		for (i = 0; i < n; i++)
 		{
-			ptr[len1++] = s2[i];
+			ptr[len1] = s2[i];
+			len1++;
 		}
 	}
 	else  /* allocate memory to pointer */
 	{
-		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
+		ptr = malloc(sizeof(char) * (len1 + len2 + 2));
 		if (ptr == NULL)
-		{
 			return (NULL);
-		}
 		_strcpy(ptr, s1);
 		for (i = 0; i < len2; i++)
 		{
-			ptr[len1++] = s2[i];
+			ptr[len1] = s2[i];
+			len1++;
 		}
 	}
-	ptr[len1++] = '\0';
+	ptr[len1] = '\0';
 	return (ptr);
 }
