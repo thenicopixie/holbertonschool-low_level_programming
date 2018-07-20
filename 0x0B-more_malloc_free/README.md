@@ -10,6 +10,8 @@ File | Goal
 1-string_nconcat.c | Concatenate two strings. Return a pointer to a newly allocated space in memory. If the function fails, return NULL. If NULL is passed, treat as an empty string
 2-calloc.c | Allocate memory for an array using `malloc`. The memory is set to zero.
 3-array_range.c | Create an array of integers. Return a pointer to the newly created array
+100-realloc.c | Reallocate a memory block using `malloc` and `free`
+101-mul.c | Multiply two positive numbers
 ### Author
 **Nicole Swanson**
 
