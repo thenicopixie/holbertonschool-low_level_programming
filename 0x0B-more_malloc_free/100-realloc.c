@@ -34,12 +34,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	if (new_size > old_size)
 	{
-		for (len = 0; len < new_size; len++)
+		for (len = 0; len < old_size; len++)
 			dest[len] = *((char *)ptr + len);
 	}
 	if (new_size < old_size)
 	{
-		for (len = 0; len < old_size; len++)
+		for (len = 0; len < new_size; len++)
 			dest[len] = *((char *)ptr + len);
 	}
 	free(ptr);
