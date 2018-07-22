@@ -36,3 +36,5 @@ File | Goal
 	- should return `0`
 	- should compile without warning when using the `-Wall` `gcc` option
 6-size.c | program that prints the size of various types on the computer it is compiled and run on
+### Author
+**Nicole Swanson**
