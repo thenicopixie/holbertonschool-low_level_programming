@@ -26,13 +26,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 /* copy values from name and owner to variables */
 	nd->name = _strdup(name);
-	nd->owner = _strdup(owner);
 
 	if (name == NULL)
 	{
 		free(nd);
 		return (NULL);
 	}
+	nd->owner = _strdup(owner);
+
 	if (owner == NULL)
 	{
 		free(nd->name);
