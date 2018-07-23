@@ -6,10 +6,10 @@
  */
 int _atoi(char *s)
 {
-	int i, sign, result, k;
+	int i, sign, k;
+	unsigned int result = 0;
 
 	sign = 0;
-	result = 0;
 	k = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -28,14 +28,13 @@ int _atoi(char *s)
 			break;
 		}
 	}
-	if (sign % 2 != 0)
+	if (sign % 2 == 0)
 	{
-		sign = -1;
+		return (result);
 	}
-	else
+	if (k == 0)
 	{
-		sign = 1;
+		return (0);
 	}
-	return (result * sign);
-	_putchar('\n');
+	return (result * -1);
 }
