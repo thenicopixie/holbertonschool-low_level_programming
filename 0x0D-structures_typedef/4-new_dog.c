@@ -1,69 +1,79 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-/**
- * _strlen - return length of string
- * @s: string
- * Return: length
- */
-int _strlen(char *s)
-{
-	int length;
 
-	for (length = 0; s[length] != '\0'; length++)
-	;
+char *_strdup(char *str);
 
-	return (length);
-}
 /**
- * _strcpy - copy string to buffer
- * @dest: destination
- * @src: string to copy
- * Return: pointer to buffer
- */
-char *_strcpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-/**
- * dog_t - original struct
- * new_dog - new struct
+ * new_dog - copy struct
  * @name: name
  * @age: age
  * @owner: owner
- * Return: NULL if fail.
+ * Return: new struct or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *cpy_name, *cpy_owner;
-	int namelen, ownlen, i;
-	
-	if (new_dog->name == NULL)
-		return (NULL);
-	if (new_dog->user == NULL)
-		reuturn (NULL);
+	dog_t *nd;
 
-	namelen = _strlen(dog_t.name);
-	ownlen = _strlen(dog_t.owner);
-	if (namelen == 0 || ownlen == 0)
+	if (name == NULL || owner == NULL)
 		return (NULL);
-	cpy_name = malloc(sizeof(char) * (namelen + 1));
-	cpy_owner = malloc(sizeof(char) * (ownlen + 1));
-	if (cpy_name == NULL || cpy_owner == NULL)
+
+	nd = malloc(sizeof(dog_t));
+	if (nd == NULL)
+	{
+		free(nd);
 		return (NULL);
-	for (i = 0; i < cpy_name; i++)
-		cpy_name[i] = dog_t.name[i];
-	cpy_name[i] = '\0';
-	for (i = 0; i < cpy_owner; i++)
-		cpy_owner = dog_t.owner[i];
-	cpy_owner[i] = '\0';
+	}
+
+/* copy values from name and owner to variables */
+	nd->name = _strdup(name);
+	nd->owner = _strdup(owner);
+
+	if (name == NULL)
+	{
+		free(nd);
+		return (NULL);
+	}
+	if (owner == NULL)
+	{
+		free(nd->name);
+		free(nd);
+		return (NULL);
+	}
+	nd->age = age;
+	return (nd);
+}
+/**
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
+ * Return: pointer to duplicated string, or NUll
+ */
+char *_strdup(char *str)
+{
+	int i, j;
+
+	char *str_ptr;
+
+/* check if str is NULL */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+/* Get length of str */
+	for (i = 0; str[i] != '\0'; i++)
+	;
+/* allocate memory to str_ptr */
+	str_ptr = malloc(sizeof(char) * (i + 1));
+/* check if str_ptr is NULL */
+	if (str_ptr == NULL)
+	{
+		return (NULL);
+	}
+/* assign values from str to str_ptr */
+	for (j = 0; j < i; j++)
+	{
+		str_ptr[j] = str[j];
+	}
+	str_ptr[j] = '\0';
+	return (str_ptr);
 }
