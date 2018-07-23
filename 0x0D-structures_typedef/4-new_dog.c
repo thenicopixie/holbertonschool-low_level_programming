@@ -74,6 +74,5 @@ char *_strdup(char *str)
 	{
 		str_ptr[j] = str[j];
 	}
-	str_ptr[j] = '\0';
 	return (str_ptr);
 }
