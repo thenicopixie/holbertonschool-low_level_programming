@@ -13,6 +13,7 @@ struct dog
 	float age;
 	char *owner;
 };
+/* dog_t - Define a new type as a new name for struct dog */
 typedef struct dog dog_t;
 /* _putchar - function to print character */
 int _putchar(char c);
@@ -20,5 +21,6 @@ int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 /* print_dog - print elements in struct */
 void print_dog(struct dog *d);
-/* dog_t - define a new type as a new name for the type struct dog */
+/* new_dog - create a new struct (dog) */
+dog_t *new_dog(char *name, float age, char *owner);
 #endif /* _DOG_H */
