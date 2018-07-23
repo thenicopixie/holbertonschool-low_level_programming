@@ -70,7 +70,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 /* assign values from str to str_ptr */
-	for (j = 0; j < i; j++)
+	for (j = 0; j <= i; j++)
 	{
 		str_ptr[j] = str[j];
 	}
