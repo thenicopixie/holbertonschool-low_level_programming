@@ -18,5 +18,7 @@ int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 /* print_dog - print elements in struct */
 void print_dog(struct dog *d);
+/* dog_t - define a new type as a new name for the type struct dog */
+#define dog_t struct dog
 
 #endif /* _DOG_H */
