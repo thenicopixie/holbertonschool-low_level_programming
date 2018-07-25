@@ -9,6 +9,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
+	/* pointer to array of structures */
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -20,15 +21,18 @@ int (*get_op_func(char *s))(int, int)
 	unsigned int i;
 
 	i = 0;
-
+	/* check if pointer matches an operator in the structure */
+	/* while current index exists, check if values match */
 	while (ops[i].op)
 	{
+	/* if match found, pass into matching operations function */
 		if (*s == *(ops[i].op))
 		{
 			return (ops[i].f);
 		}
 		i++;
 	}
+	/* if no match found, print Error */
 	printf("Error\n");
 	exit(99);
 }
