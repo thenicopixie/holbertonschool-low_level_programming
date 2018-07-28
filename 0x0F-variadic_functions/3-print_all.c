@@ -31,6 +31,7 @@ void print_all(const char * const format, ...)
 				ptr = va_arg(args, char *);
 				if (!ptr)
 				{
+					mark = 1;
 					printf("(nil)");
 					break;
 				}
