@@ -8,6 +8,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, mark = 0;
+	char *ptr;
+
 	va_start(args, format);
 	while (format[i] && format)
 	{
@@ -26,13 +28,14 @@ void print_all(const char * const format, ...)
 				mark = 1;
 				break;
 			case 's':
-				if (!format[i])
+				ptr = va_arg(args, char *);
+				if (!ptr)
 				{
 					mark = 1;
 					printf("(nil)");
 					break;
 				}
-				printf("%s", va_arg(args, char *));
+				printf("%s", ptr);
 				mark = 1;
 				break;
 		}
