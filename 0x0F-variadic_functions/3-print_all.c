@@ -8,9 +8,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, mark = 0;
-
 	va_start(args, format);
-	while (format[i])
+	while (format[i] && format)
 	{
 		switch (format[i])
 		{
