@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	char *ptr;
 
 	va_start(args, format);
-	while (format[i] && format)
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
@@ -31,7 +31,6 @@ void print_all(const char * const format, ...)
 				ptr = va_arg(args, char *);
 				if (!ptr)
 				{
-					mark = 1;
 					printf("(nil)");
 					break;
 				}
