@@ -5,6 +5,8 @@
 #include <stdarg.h>
 /**
  * _putchar - write character to standard output
+ * @c: character to print
+ * Return: 1 or -1
  * sum_them_all - Returns the sum of all of its parameters
  * print_numbers - print numbers
  * print_strings - print strings, followed by a new line
