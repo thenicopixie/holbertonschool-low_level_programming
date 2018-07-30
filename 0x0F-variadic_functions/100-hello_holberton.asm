@@ -7,7 +7,7 @@ main:
     mov	   rdx, 17
     syscall
     mov    rax, 60
-    xo     rdi, 0
+    xor     rdi, 0
     syscall
 
 section  .data
