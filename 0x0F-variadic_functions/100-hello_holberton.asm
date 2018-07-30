@@ -1,5 +1,3 @@
-section  .data
-	message: db "Hello, Hoberton", 10
 section .text
 	global main
 main:
@@ -10,5 +8,8 @@ main:
 
 	syscall
 	mov rax, 60
-	mov rdi, 0
+	xor rdi, rdi
 	syscall
+
+section  .data
+        message: db "Hello, Hoberton", 10
