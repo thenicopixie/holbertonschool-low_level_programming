@@ -11,4 +11,4 @@ main:
     syscall
 
 section  .data
-    messag db	"Hello, Hoberton", 10
+    message db	"Hello, Hoberton", 10
