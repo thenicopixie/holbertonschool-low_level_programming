@@ -7,8 +7,8 @@ main:
     mov	   rdx, 17
     syscall
     mov    rax, 60
-    xor     rdi, 0
+    xor    rdi, rdi
     syscall
 
 section  .data
-    message db	"Hello, Hoberton", 10
+    message db	"Hello, Holberton", 10
