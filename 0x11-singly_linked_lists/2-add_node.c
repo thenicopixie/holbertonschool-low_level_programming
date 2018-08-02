@@ -1,6 +1,11 @@
 #include "lists.h"
 #include <string.h>
 
+/**
+ * _strlen - find length of string
+ * @s: string
+ * Return: length of string
+ */
 int _strlen(const char *s)
 {
 	int len = 0;
