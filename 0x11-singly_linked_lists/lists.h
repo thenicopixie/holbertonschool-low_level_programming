@@ -1,5 +1,23 @@
 #ifndef _LISTS_H_
 #define _LISTS_H_
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * struct list_s - list of nodes containing pointer to a string,
+ * lenght of string, and pointer to next struct
+ * @str: pointer to string
+ * @len: length of string
+ * @next: pointer to next node
+ */
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
+
+int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
