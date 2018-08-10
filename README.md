@@ -1,6 +1,5 @@
 # README
-## Decription
-### C programming
+## Low-level programming - C
 
 ### Low-level programming & Algorithm - Hacthing out
 #### Directories:
