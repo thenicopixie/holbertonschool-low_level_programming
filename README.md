@@ -1,6 +1,6 @@
 # README
 ## Low-level programming - C
-
+This repository holds low-level programming projects done for Holberton School
 ### Low-level programming & Algorithm - Hacthing out
 #### Directories:
 - 0x00-hello\_world
