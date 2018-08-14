@@ -39,12 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/* write */
 
-	fdes = open(filename, O_WRONLY);
-
-	if (fdes == -1)
-		return (0);
-
-	writer = write(fdes, buffer, reader);
+	writer = write(STDOUT_FILENO, buffer, reader);
 
 	if (writer == -1)
 	{
@@ -52,5 +47,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
+	free(buffer);
 	return (writer);
 }
