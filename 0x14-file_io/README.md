@@ -13,4 +13,8 @@
 File | Task
 -----|-----
 0-read\_textfile.c | function that reads a text file and prints it to the POSIX standard output.
-
+1-create\_file.c | function that create a file.
+2-append\_text\_to\_file.c | function that appends a text at the end of a file
+3-cp.c | function that copies contents from one file into another file
+### Author
+**Nicole Swanson**
