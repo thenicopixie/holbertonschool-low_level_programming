@@ -2,7 +2,7 @@
 
 /**
  * insert_nodeint_at_index - inserts a new node at a given position
- * @head: doulbe pointer to struct
+ * @head: double pointer to struct
  * @idx: the index of the list where the new node should be added
  * @n: input number
  * Return: address of the new node, or NULL
