@@ -25,7 +25,7 @@ File | Description
 - Programs and functions compiled with `gcc 4.8.4` using the flags `-Wall` `-Werror` `-Wextra` and `pedantic`
 - All files should end with a newline
 - Not allowed to use global variables
-- The only C standard library functions allowed are: `malloc`, `free', `printf`, and `exit`
+- The only C standard library functions allowed are: `malloc`, `free`, `printf`, and `exit`
 - Code style: Betty
 
 #### Data structure for project:
