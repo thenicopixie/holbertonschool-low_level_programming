@@ -43,7 +43,8 @@ typedef struct dlistint_s
         int n;
         struct dlistint_s *prev;
         struct dlistint_s *next;
-} dlistint_t;```
+} dlistint_t;
+```
 
 #### Author
 Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
