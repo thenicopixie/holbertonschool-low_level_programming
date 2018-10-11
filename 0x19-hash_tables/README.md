@@ -51,12 +51,7 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 ```
-
----
-File | Description
------|------------
-0-hash\_table\_create.c | A function the creates a hash table. Returns a pointer to the newly created hash table, or `NULL` if something failed.
-1-djb2.c | A hash function that implements the djb2 algorithm:
+#### djb2 function
 ```    unsigned long
     hash(unsigned char *str)
     {
@@ -71,6 +66,10 @@ File | Description
 ```
 
 ---
+File | Description
+-----|------------
+0-hash\_table\_create.c | A function the creates a hash table. Returns a pointer to the newly created hash table, or `NULL` if something failed.
+1-djb2.c | A hash function that implements the djb2 algorithm.
 2-key\_index.c | A function that returns the index at which the key/value pair should be stored in the array of the hash table.
 3-hash\_table\_set.c | A function that adds an element to the hash table. Returns `1` on success, or `0` on failure. In the case of a collision, the function adds a new node at the beginning of the list.
 4-hash\_table\_get.c | A function that retrieves a value associated with a key. Returns the value associated with the element, or `NULL` if `key` couldn't be found.
