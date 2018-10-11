@@ -69,11 +69,13 @@ File | Description
         return hash;
     }
 ```
-2-key_index.c | A function that returns the index at which the key/value pair should be stored in the array of the hash table.
-3-hash_table_set.c | A function that adds an element to the hash table. Returns `1` on success, or `0` on failure. In the case of a collision, the function adds a new node at the beginning of the list.
-4-hash_table_get.c | A function that retrieves a value associated with a key. Returns the value associated with the element, or `NULL` if `key` couldn't be found.
-5-hash_table_print.c | A function that prints a hash table, or nothing if the table is `NULL`.
-6-hash_table_delete.c | A function that deletes a hash table
+---
+---|---
+2-key\_index.c | A function that returns the index at which the key/value pair should be stored in the array of the hash table.
+3-hash\_table\_set.c | A function that adds an element to the hash table. Returns `1` on success, or `0` on failure. In the case of a collision, the function adds a new node at the beginning of the list.
+4-hash\_table\_get.c | A function that retrieves a value associated with a key. Returns the value associated with the element, or `NULL` if `key` couldn't be found.
+5-hash\_table\_print.c | A function that prints a hash table, or nothing if the table is `NULL`.
+6-hash\_table\_delete.c | A function that deletes a hash table
 
 #### Author
-Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
+Nicole Swanson - [@Nicolette\_Swan](https://twitter.com/Nicolette_Swan)
