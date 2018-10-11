@@ -56,7 +56,8 @@ typedef struct hash_table_s
 File | Description
 -----|------------
 0-hash\_table\_create.c | A function the creates a hash table. Returns a pointer to the newly created hash table, or `NULL` if something failed.
-1-djb2.c | A hash function that implements the djb2 algorithm: ```    unsigned long
+1-djb2.c | A hash function that implements the djb2 algorithm:
+```    unsigned long
     hash(unsigned char *str)
     {
         unsigned long hash = 5381;
