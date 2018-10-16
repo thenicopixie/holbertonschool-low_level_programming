@@ -1,7 +1,5 @@
 # README
-## Low-level programming - C
-This repository holds low-level programming projects done for Holberton School
-### Low-level programming & Algorithm - Hacthing out
+Low-level C programming projects
 
 ---
 Directory | Description
@@ -31,10 +29,5 @@ Directory | Description
 0x18-stacks_queues_lifo_fifo | C - Stacks, Queues - LIFO, FIFO 
 0x19-hash_tables | C - Hash tables
 
-### Low-level programming & Algorithm - Data structures and Algorithms
-#### Directories:
-- 0x11-singly\_linked\_lists
-- 0x12-more\_singly\_linked\_lists
-- 0x13-bit\_manipulation
 ### Author
 Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
