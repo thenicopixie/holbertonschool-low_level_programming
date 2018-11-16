@@ -13,7 +13,7 @@ CC = gcc
 SRC = main.c holberton.c
 
 # Store all .c files in the SRC MACRO as .o files
-OBJ = $(FLAGS)$(SRC:.c=.o)
+OBJ = $(FLAG)$(SRC:.c=.o)
 
 NAME = holberton
 RM = rm
