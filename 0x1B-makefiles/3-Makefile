@@ -1,0 +1,31 @@
+
+# build an executable named holberton from main.c and holberton.c
+# CC is the compiler to be used
+# SRC is the .c files
+# OBJ is the .o files
+# NAME is the name of the executable
+# RM the program to delete files
+
+CC = gcc
+
+# Store all .c files in the SRC variable
+SRC = main.c holberton.c
+
+# Store all .c files in the SRC MACRO as .o files
+OBJ = $(SRC:.c=.o)
+
+NAME = holberton
+RM = rm
+
+# Rules: all, clean, oclean, fclean, re
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) -f *~ $(NAME)
+oclean:
+	$(RM) -f $(OBJ)
+fclean:
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
+re: oclean all
