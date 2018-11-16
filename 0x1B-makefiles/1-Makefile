@@ -1,0 +1,6 @@
+
+# build an executable named holberton from main.c and holberton.c
+CC = gcc
+SRC = main.c holberton.c
+all: holberton.c main.c
+	$(CC) $(SRC) -o holberton
