@@ -51,6 +51,7 @@ Requirements:
   - `SRC`: the `.c` files
 </details>
 <br>
+
 **#2  make -f 2-Makefile**
 <details>
 <summary></summary>
@@ -68,6 +69,7 @@ Requirements:
 - Not allowed to have a list of all the `.o` files
 </details>
 <br>
+
 **#3 make -f 3-Makefile**
 <details>
 <summary></summary>
@@ -90,6 +92,7 @@ Requirements:
 - Not allowed to have a list of all the `.o` files
 </details>
 <br>
+
 **#4 A complete Makefile**
 <details>
 <summary></summary>
@@ -114,6 +117,7 @@ Requirements:
 - Not allowed to have a list of all the `.o` files
 </details>
 <br>
+
 **#5 Island perimeter**
 <details>
 <summary></summary>
