@@ -50,7 +50,7 @@ Requirements:
   - `CC`: the compiler to be used
   - `SRC`: the `.c` files
 </details>
-
+<br>
 **#2  make -f 2-Makefile**
 <details>
 <summary></summary>
@@ -67,7 +67,7 @@ Requirements:
 - The `all` rule should recompile only the updated source files
 - Not allowed to have a list of all the `.o` files
 </details>
-
+<br>
 **#3 make -f 3-Makefile**
 <details>
 <summary></summary>
@@ -89,7 +89,7 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 - Not allowed to have a list of all the `.o` files
 </details>
-
+<br>
 **#4 A complete Makefile**
 <details>
 <summary></summary>
@@ -113,7 +113,7 @@ Requirements:
 
 - Not allowed to have a list of all the `.o` files
 </details>
-
+<br>
 **#5 Island perimeter**
 <details>
 <summary></summary>
@@ -131,7 +131,7 @@ Requirements:
 - Not allowed to import any module
 - Module and function must be documented
 </details>
-
+<br>
 ### Files
 In the above tasks these files will be used. Compile these files only:
 
@@ -165,8 +165,7 @@ void print_holberton(void);
 ```
 
 **holberton.c**
-<details>
-<summary></summary>
+
 ```
 #include "m.h"
 
@@ -206,4 +205,3 @@ void print_holberton(void)
 	printf("\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 }
 ```
-</details>
