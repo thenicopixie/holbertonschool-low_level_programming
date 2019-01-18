@@ -25,19 +25,22 @@ Files | Description
  4-Makefile | A complete Makefile
  5-island_perimeter.py | **Technical interview preparation** - Create a function `def island_perimeter(grid):` that returns the perimeter of the island described in `grid`
  
-#### More descriptions:
+### More descriptions:
 
 **#0 make -f 0-Makefile**
-
+<details>
+<summary></summary>
 Requirements:
 
 - name of the executable: `holberton`
 - rules: `all`
   - The `all` rule builds your executable
 - variables: none
+</details>
 
 **#1 make -f 1-Makefile**
-
+<details>
+<summary></summary>
 Requirements:
 
 - name of the executable: `holberton`
@@ -46,9 +49,12 @@ Requirements:
 - variables: `CC`, `SRC`
   - `CC`: the compiler to be used
   - `SRC`: the `.c` files
+</details>
+<br>
 
 **#2  make -f 2-Makefile**
-
+<details>
+<summary></summary>
 Requirements:
 
 - name of the executable: `holberton`
@@ -61,9 +67,12 @@ Requirements:
   - `NAME`: the name of the executable
 - The `all` rule should recompile only the updated source files
 - Not allowed to have a list of all the `.o` files
+</details>
+<br>
 
 **#3 make -f 3-Makefile**
-
+<details>
+<summary></summary>
 Requirements:
 - name of the executable: `holberton`
 - rules: `all`, `clean`, `oclean`, `fclean`, `re`
@@ -81,9 +90,12 @@ Requirements:
 - The all rule should recompile only the updated source files
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 - Not allowed to have a list of all the `.o` files
+</details>
+<br>
 
 **#4 A complete Makefile**
-
+<details>
+<summary></summary>
 Requirements:
 - name of the executable: `holberton`
 - rules: `all`, `clean`, `fclean`, `oclean`, `re`
@@ -103,8 +115,12 @@ Requirements:
 - The `clean`, `oclean`, `fclean`, `re` rules should never fail
 
 - Not allowed to have a list of all the `.o` files
+</details>
+<br>
 
 **#5 Island perimeter**
+<details>
+<summary></summary>
 - `grid` is a list of list of integers:
    - 0 represents a water zone
    - 1 represents a land zone
@@ -118,6 +134,8 @@ Requirements:
 - First line contains `#!/usr/bin/python3`
 - Not allowed to import any module
 - Module and function must be documented
+</details>
+<br>
 
 ### Files
 In the above tasks these files will be used. Compile these files only:
@@ -152,6 +170,7 @@ void print_holberton(void);
 ```
 
 **holberton.c**
+
 ```
 #include "m.h"
 
