@@ -13,5 +13,5 @@ File | Task
 4-clear\_bit.c | A function that sets the value of a bit to 0 at a given index.
 5-flip\_bits.c | A function that returns the number of bits you would need to flip to get from one number to another.
 100-get\_endianness.c | A function that checks the endianness.
-### Author
-**Nicole Swanson**
+#### Author
+Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
