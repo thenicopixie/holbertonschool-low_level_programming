@@ -28,6 +28,8 @@ Directory | Description
 0x17-dynamic_libraries | C - Dynamic libraries
 0x18-stacks_queues_lifo_fifo | C - Stacks, Queues - LIFO, FIFO 
 0x19-hash_tables | C - Hash tables
+0x1B-makefiles | Makefiles
+0x1C-binary_trees | Binary Trees
 
 ### Author
 Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
