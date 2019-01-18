@@ -16,5 +16,5 @@ File | Task
 1-create\_file.c | function that create a file.
 2-append\_text\_to\_file.c | function that appends a text at the end of a file
 3-cp.c | function that copies contents from one file into another file
-### Author
-**Nicole Swanson**
+#### Author
+Nicole Swanson - [@Nicolette_Swan](https://twitter.com/Nicolette_Swan)
